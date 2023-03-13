@@ -1,7 +1,9 @@
 {
+    "Branch": "SMB Communications System Test",
+    "Version": "3-13-23",
     "donotedit": "run for standard operation, service for service menu",
     "launchin": "POS",
     "theme": "themes/eyecandy/style.css",
-    "serverLocation": "localhost:8080",
+    "serverLocation": "localhost",
     "serial": "000000000"
 }  

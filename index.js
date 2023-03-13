@@ -7,27 +7,14 @@ var tickCounter = 0
 //load fs
 const fs = require('fs')
 //Initialize network communication
-const net = require('net')
-const client = new net.Socket();
+//TODO: SMB
+//const net = require('net')
+//const client = new net.Socket();
 //set up the config list
 var config = JSON.parse(fs.readFileSync('config/config.json'));
 module.exports.config = config
 //reads if the launch paramater is run
 
-	function server(mode) {
-		tick();
-		client.connect(8080, '127.0.0.1', function() {
-			console.log('Connected');
-			client.write('client' + config.serial);
-		});
-	function tick(){
-	if (interupt === false){
-		
-
-		tickCounter++
-		console.log(mode + "server connected" + tickCounter)
-		setTimeout(tick, 1000)
-	}}}
 
 if(config.launchin === "POS") {
 console.log("OpenPOS is starting in standard mode....")
